@@ -1,0 +1,232 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+body::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #bdd7d660;
+
+    z-index: 1;
+}
+
+#intro {
+    /* align text center */
+    text-align: center;
+    padding: 100px;
+    position: relative;
+}
+
+#main{
+    background-color: #B5CCD2;
+    background-clip: content-box, padding-box;
+    width: 70%;
+    /* /center */
+
+    /* text padding */
+    
+
+    margin: auto;
+    /* margin-top: 120px; */
+  
+
+}
+
+/* navbar */
+.navbar {
+    z-index: 2;
+
+    width: 100%;
+
+    position: sticky;
+    top: 0;
+
+    backdrop-filter: blur(10px);  
+
+    /* align items to left and right */
+    display: flex;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(51, 51, 51, 0.445);
+
+    width: 100%;
+}
+
+.navbar li {
+    display: inline-block;
+}
+
+.navbar li:last-child {
+    float: right;
+}
+
+.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+.navbar li a:hover {
+    background-color: #111;
+}
+
+.active {
+    background-color: #04AA6D;
+  }
+  
+
+
+
+
+
+.problem {
+    background-color: #2c2f33;
+    border: 2px solid #030303;
+    border-radius: 10px;
+    max-width: 500px;
+    padding: 10px;
+
+    font-family: monospace;
+    font-size: 16px;
+    color: #fff;
+}
+
+u {
+    color: #ff0000;
+    font-family: monospace;
+    font-size: 20px;
+
+    text-decoration: none;
+
+    border-bottom: 1px solid #ff0000;
+}
+
+@keyframes underline {
+    to {
+        border-bottom: 3px solid #ff0000;
+        font-size: larger;
+    }
+}
+
+u:hover {
+    text-decoration: none;
+    animation: underline 0.1s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+/* add padding for .question */
+.question {
+    padding: 10px;
+}
+
+.question img {
+    width: 400px;
+    padding: 30px;
+}
+.question table {
+    width: 30%;
+    border-collapse: collapse;
+
+    /* move right 20px */
+    margin-left: 10%;
+}
+
+.question table tr {
+    border: 1px solid #000000;
+}
+
+.question table td {
+    border: 1px solid #000000;
+}
+.q {
+    font-family: monospace;
+    font-size: 20px; 
+
+    /* blue left border thick */
+    border-left: 5px solid #0000ff;
+    padding-left: 10px;
+}
+
+.q b {
+    background-color: #0000006c;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.a {
+    font-size: 17px; 
+    padding-left: 10px;
+
+    position: relative;
+
+    font-family: Consolas;
+}
+
+.dot {
+    height: 25px;
+    width: 25px;
+    background-color: rgb(30, 255, 131);
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: -5px;
+    margin-left: -1px;
+    position: absolute;
+}
+#intro .dot {
+    /* behind */
+    z-index: -1;
+
+    height: 100px;
+    width: 100px;
+    background-color: rgba(30, 255, 131, 0.596);
+    border-radius: 50%;
+
+    /* left */
+    /* align */
+    right: 20%;
+
+    position: absolute;
+}
+
+#calcu {
+    position: absolute;
+    width: 500px;
+    right: 50px;
+    top: 300px;
+}
+
+#sparkles {
+    position: absolute;
+    /* top right */
+    top: 10%;
+    left: 10%;
+    /* flip img */
+    transform: scaleX(-1);
+}
+
+#footer {
+    bottom: 0;
+
+    padding-top: 10px;
+    /* format texts */
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline;
+}
