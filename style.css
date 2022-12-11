@@ -2,6 +2,22 @@ html {
     scroll-behavior: smooth;
 }
 
+video {
+    width: 300px;
+    margin-left: 30px;
+    border-radius: 22px;
+    overflow: hidden;
+    box-shadow: 0 19px 51px 0 rgba(0,0,0,0.16), 0 14px 19px 0 rgba(0,0,0,0.07);
+}
+
+/* video on playing */
+video:hover {
+    /* increase size in .5 s */
+    transform: scale(1.1);
+    transition: transform .5s;
+
+}
+
 body {
     -ms-overflow-style: none;  /* Internet Explorer 10+ */
     scrollbar-width: none;  /* Firefox */
