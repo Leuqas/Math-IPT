@@ -1,2 +1,2 @@
 # Math-IPT
-https://ipt.leuqas.chesca.tk
+https://ipt.chesca.leuqas.tk
